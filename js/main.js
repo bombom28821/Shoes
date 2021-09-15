@@ -95,6 +95,12 @@ Array.from(footerTitle).forEach((e, index) => {
             liLast[index].style.marginBottom = 0
         }
     }
+    window.addEventListener('resize', () =>{
+        console.log(window.innerWidth)
+        if(window.innerWidth >= 620){
+            footerContact[index].style.display = 'block'
+        }
+    })
 })
 //Back to Top + Scroll HEADER
 let backToTop = _$('.backToTop')
