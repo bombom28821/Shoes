@@ -2569,13 +2569,13 @@ body {
   right: 0;
   width: 100%;
   height: 100%;
-  clip-path: circle(150px at 80% 20%);
   transition: all 0.5s;
   z-index: 1;
 }
 
 .trending .trending__content .trending__products .owl--products .owl-item .trending__card .trending__circle:first-child {
   background-color: #fe6d6c;
+  clip-path: circle(150px at 80% 20%);
 }
 
 .trending .trending__content .trending__products .owl--products .owl-item .trending__card:hover .trending__circle {
