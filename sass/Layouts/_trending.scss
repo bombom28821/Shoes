@@ -38,6 +38,9 @@
                             clip-path: circle(150px at 80% 20%);
                             transition: all 0.5s;
                             z-index: 1;
+                            &:first-child{
+                                background-color: $color-red-0;
+                            }
                         }
                         &:hover .trending__circle {
                             clip-path: circle(310px at 80% -20%);

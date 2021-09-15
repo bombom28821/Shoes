@@ -96,7 +96,6 @@ Array.from(footerTitle).forEach((e, index) => {
         }
     }
     window.addEventListener('resize', () =>{
-        console.log(window.innerWidth)
         if(window.innerWidth >= 620){
             footerContact[index].style.display = 'block'
         }
