@@ -1,0 +1,15 @@
+.darkMode{
+    .sidebarMini{
+        background-color: $color-black-5;
+        .sidebarMini__button{
+            background-color: $color-black-5;
+            color: $color-white-0;
+        }
+        .sidebarMini__content{
+            .switch{
+                background-color: $color-black-3;
+                box-shadow: 0 0 5px 0 $color-gray-0;
+            }
+        }
+    }
+}

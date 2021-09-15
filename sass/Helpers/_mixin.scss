@@ -1,0 +1,26 @@
+// Style text 
+@mixin styleText($color, $fs, $fw) {
+    color: $color;
+    font-size: $fs;
+    font-weight: $fw;
+}
+//Style button
+@mixin styleButton($fs, $fw, $color, $bg-color, $pd-y, $pd-x){
+    color: $color;
+    background-color: $bg-color;
+    font-size: $fs;
+    font-weight: $fw;
+    padding: $pd-y $pd-x;
+}
+@mixin responsive($screen){
+    @if map-has-key($map: $breakpoints, $key: $screen){
+        $value: map-get($map: $breakpoints, $key: $screen);
+        @media screen and (max-width: $value){
+            @content;
+        }
+    }
+    //Check screen has exist or not
+    @else{
+        @warn "`${screen}` is not found";
+    }
+}

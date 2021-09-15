@@ -1,0 +1,85 @@
+.phone {
+    width: 110px;
+    height: 110px;
+    position: fixed;
+    bottom: 0px;
+    left: 20px;
+    z-index: 10000;
+    text-align: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .5s;
+    .phone__affect1 {
+        width: 87px;
+        height: 87px;
+        position: absolute;
+        top: 9px;
+        left: 9px;
+        background-color: transparent;
+        border-radius: 100%;
+        border: 2px solid $color-red-3;
+        animation: affect1 1.2s ease-in-out infinite;
+    }
+    .phone__affect2 {
+        width: 57px;
+        height: 57px;
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        background-color: $color-red-4;
+        border-radius: 50%;
+        animation: affect2 2s infinite;
+    }
+    .phone__icon {
+        width: 33px;
+        height: 33px;
+        position: absolute;
+        top: 37px;
+        left: 37px;
+        i {
+            width: 33px;
+            height: 33px;
+            background-color: $color-red-2;
+            line-height: 33px;
+            border-radius: 50%;
+            color: $color-white-0;
+            animation: iconPhone 0.5s ease-in-out infinite;
+        }
+    }
+}
+@keyframes iconPhone {
+    0% {
+        transform: rotate(0);
+    }
+    50% {
+        transform: rotate(40deg);
+    }
+    100% {
+        transform: rotate(0);
+    }
+}
+@keyframes affect2 {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(0.6);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+@keyframes affect1 {
+    0% {
+        transform: scale(0.5);
+        opacity: 0;
+    }
+    50% {
+        transform: scale(1);
+        opacity: 0.6;
+    }
+    100% {
+        transform: scale(0.5);
+        opacity: 0;
+    }
+}

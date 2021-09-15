@@ -1,0 +1,65 @@
+.darkMode{
+
+    .header--move{
+        background-color: $color-black-4;
+        box-shadow: 0 0 8px 3px $color-black-5;
+        .header__content{
+            .header__left{
+                ul{
+                    li{
+                        a{
+                            color: $color-white-0;
+                            &:hover {
+                                color: $color-red-0;
+                            }
+                        }
+                        &:first-of-type {
+                            path {
+                                fill: $color-white-0;
+                                &:hover {
+                                    fill: $color-red-0;
+                                }
+                            }
+                        }
+                    }
+                }
+            } 
+            .header__right{
+                .header__search{
+                    form{
+                        input{
+                            background-color: $color-black-5;
+                        }
+                        label{
+                            i{
+                                color: $color-white-0;
+                                &:hover {
+                                    background-color: $color-black-5 ;
+                                    color: $color-red-0;
+                                }
+                            }
+                        }
+                    }
+                }
+                .header__cart {
+                    i {
+                        color: $color-white-0;
+                        &:hover {
+                            background-color: $color-black-5;
+                            color: $color-red-0;
+                        }
+                    }
+                }
+                .header__menu{
+                    i {
+                        color: $color-white-0;
+                        &:hover {
+                            background-color: $color-gray-2;
+                            color: $color-red-0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

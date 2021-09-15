@@ -1,0 +1,41 @@
+.darkMode{
+    .trending{
+        .trending__content{
+            p{
+                color: $color-white-0;
+                border-left-color: $color-white-0;
+            }
+            .trending__products{
+                .owl--products{
+                    .trending__card{
+                        background-color: $color-black-4;
+                        &::after{
+                            color: $color-white-1;
+                        }
+                        .trending__title{
+                            p{
+                                color: $color-white-0;
+                            }
+                            button{
+                                color: $color-black-0;
+                                background-color: $color-white-0;
+                                &:hover {
+                                    background-color: $color-yellow-0;
+                                }
+                            }
+                        }
+                    }
+                    .owl-nav{
+                        .owl-prev,.owl-next{
+                            color: $color-white-0;
+                            background-color: $color-black-4;
+                            &:hover{
+                                background-color: $color-black-5;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

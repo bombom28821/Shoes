@@ -1,0 +1,16 @@
+.darkMode{
+    .connection{
+        .connection__content{
+            h1{
+                color: $color-white-0;
+            }
+            button{
+                color: $color-black-0;
+                background-color: $color-white-0;
+                &:hover {
+                    background-color: $color-yellow-0;
+                }
+            }
+        }
+    }
+}

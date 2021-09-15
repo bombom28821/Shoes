@@ -1,0 +1,62 @@
+.darkMode{
+    .footer{
+        background-color: $color-black-4;
+        .footer__content{
+            .footer__top{
+                border-bottom-color: $color-white-0;
+            }
+            .footer__info{
+                border-color: $color-white-0;
+                .footer__title{
+                    a{
+                        color: $color-white-0;
+                    }
+                }
+                ul{
+                    li{
+                        a{
+                            color: $color-white-0;
+                        }
+                    }
+                }
+                &:first-child{
+                    button{
+                        background-color: $color-black-4;
+                        color: $color-white-0;
+                        border: 1px solid $color-white-0;
+                    }
+                    .footer__dropdownMenu{
+                        border-color: $color-white-1;
+                        background-color: $color-black-4;
+                        a{
+                            color: $color-white-0;
+                            &:hover{
+                                background-color: $color-black-3;
+                            }
+                        }
+                    }
+                }
+            }
+            .footer__bottom{
+                .footer__logo{
+                    a{
+                        svg{
+                            path{
+                                fill: $color-white-0;
+                            }
+                        }
+                    }
+                }
+                .footer__policy{
+                    ul{
+                        li{
+                            a{
+                                color: $color-white-0;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,32 @@
+.darkMode{
+    .breakthrough{
+        .breakthrough__content{
+            .breakthrough__shop{
+                p{
+                    color: $color-white-0;
+                }
+            }
+            .breakthrough__main{
+                .breakthrough__right{
+                    .breakthrough__text{
+                        border-top-color: $color-white-0;
+                        h3{
+                            color: $color-white-0;
+                        }
+                        p{
+                            &:first-child{
+                                color: $color-white-0;
+                            }
+                            &.active {
+                                color: $color-yellow-1;
+                            }
+                        }
+                        &:last-child{
+                            border-bottom-color: $color-white-0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

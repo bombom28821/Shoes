@@ -1,0 +1,33 @@
+.darkMode{
+    .lastedProduct{
+        .lastedProduct__title{
+            p{
+                &:first-child{
+                    color: $color-white-0;
+                    border-left: 3px solid $color-white-0;
+                }
+                &:last-child{
+                    color: $color-white-0;
+                }
+            }
+        }
+        .lastedProduct__products{
+            .lastedProduct__card{
+                .lastedProduct__cardContent{
+                    background-color: $color-black-4;
+                    .lastedProduct__cardTitle{
+                        &::before{
+                            background-color: $color-black-4;
+                        }
+                        .lastedProduct__circle{
+                            box-shadow: 0 0 0 8px $color-black-4;
+                        }
+                    }
+                    i{
+                        color: $color-black-4;
+                    }
+                }
+            }
+        }
+    }
+}
